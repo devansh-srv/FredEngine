@@ -31,5 +31,13 @@ public:
   };
   chessboard();
   void printBoard();
+  uint64_t pawnmoves(uint64_t pawns,bool isWhite,uint64_t emptysquares);
+  uint64_t rookmoves(uint64_t rooks,uint64_t emptysquares);
+  uint64_t knightmoves(uint64_t knights);
+  uint64_t bishopmoves(uint64_t bishops,uint64_t emptysquares);
+  uint64_t queenmoves(uint64_t queen,uint64_t emptysquares);
+  uint64_t kingmoves(uint64_t king,uint64_t emptysquares);
+  // void printBitBoard(uint64_t bitboard,char piece);
+  void printBitBoard(uint64_t bitboard);
 };
 #endif

@@ -50,4 +50,24 @@ void chessboard::printBoard(){
     }
     cout<<endl;
   }
-} 
+}
+// void chessboard::printBitBoard(uint64_t bitboard,char piece){
+//   for(int i = 63;i>=0;i--){
+//     if((bitboard>>i)&1){
+//       cout<<piece<<" ";
+//     }else{cout<<"."<<" ";}
+//     if(i%8 == 0){
+//       cout<<endl;
+//     }
+//   }
+//   cout<<endl;
+// }
+void chessboard::printBitBoard(uint64_t bitboard){
+  for(int i = 63;i>=0;i--){
+    cout<<((bitboard>>i)&1)<<" ";
+    if(i%8 == 0){
+      cout<<endl;
+    }
+  }
+  cout<<endl;
+}
